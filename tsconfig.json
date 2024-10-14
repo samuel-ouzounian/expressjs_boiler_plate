@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "@adapters/*": ["src/lib/adapters/*"],
+      "@commands/*": ["src/lib/commands/*"],
+      "@factories/*": ["src/lib/factories/*"],
+      "@services/*": ["src/lib/services/*"],
+      "@templates/*": ["src/lib/templates/*"],
+      "@apiTypes/*": ["src/lib/types/*"],
+      "@utils/*": ["src/lib/utils/*"],
+      "@src/": ["src/*"]
+    },
+    "types": ["jest", "node"],
+    "outDir": "./dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "skipLibCheck": true
+  }
+}
