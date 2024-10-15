@@ -23,8 +23,8 @@ app.use(cors({ origin: origins }));
 app.use(express.json());
 
 /*Socket setup*/
-const server = http.createServer(app);
-const io = new SocketIOServer(server, {
+export const server = http.createServer(app);
+export const io = new SocketIOServer(server, {
   cors: {
     origin: origins,
     methods: ["GET", "POST"],

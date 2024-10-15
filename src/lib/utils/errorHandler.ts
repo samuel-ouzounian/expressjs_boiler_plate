@@ -16,6 +16,10 @@ class ErrorHandler {
       condition: (e) => e.message.includes("Input validation error"),
       message: "Input validation error.",
     },
+    {
+      condition: (e) => e.message.includes("Error parsing socket body"),
+      message: "Input validation error.",
+    },
     //Any other conditions
   ];
 
